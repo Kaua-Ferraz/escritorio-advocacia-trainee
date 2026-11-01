@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
 import PracticeAreas from "@/components/PracticeAreas";
+import Reviews from "@/components/Reviews/Reviews";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <PracticeAreas />
+        <Reviews />
         <Contact />
       </main>
       <Footer />
