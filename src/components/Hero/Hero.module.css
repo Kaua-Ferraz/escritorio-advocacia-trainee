@@ -3,7 +3,7 @@
   isolation: isolate;
   min-height: max(1120px, calc(100svh + 180px));
   overflow: hidden;
-  background-color: #302b29;
+  background-color: #f9f5eb;
   color: #ffffff;
   font-family: var(--font-inter), sans-serif;
 }
@@ -139,17 +139,20 @@
 
 .wave {
   position: absolute;
+  display: block;
   right: 0;
   bottom: 0;
   left: 0;
   height: 24.4%;
   width: 100%;
-  fill: #ffffff;
   pointer-events: none;
 }
 
-.mobileWave {
-  display: none;
+.waveImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 @media (max-width: 900px) and (min-width: 701px) {
@@ -237,13 +240,6 @@
     height: 15.3%;
   }
 
-  .desktopWave {
-    display: none;
-  }
-
-  .mobileWave {
-    display: block;
-  }
 }
 
 /* Responsividade até 390px */

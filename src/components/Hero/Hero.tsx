@@ -31,22 +31,17 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      {/* SVG da curva */}
-      <svg
-        className={styles.wave}
-        viewBox="0 0 1280 274"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <path
-          className={styles.desktopWave}
-          d="M0 225 C427 117 853 4 1280 0 L1280 274 L0 274 Z"
+      <picture className={styles.wave}>
+        <source
+          media="(max-width: 700px)"
+          srcSet="/images/hero-wave-mobile.svg"
         />
-        <path
-          className={styles.mobileWave}
-          d="M0 239 C320 80 640 0 1280 0 L1280 274 L0 274 Z"
+        <img
+          className={styles.waveImage}
+          src="/images/hero-wave-desktop.svg"
+          alt=""
         />
-      </svg>
+      </picture>
     </section>
   );
 }

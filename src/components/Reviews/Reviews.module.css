@@ -5,7 +5,7 @@
   --gold: #ffd536;
   --gap: clamp(26px, 3vw, 44px);
   overflow: hidden;
-  background: #ffffff;
+  background: #e4bd7a;
   color: var(--dark);
   font-family: var(--font-inter), Arial, sans-serif;
 }
@@ -15,6 +15,7 @@
   min-height: clamp(190px, 21vw, 300px);
   align-items: flex-end;
   padding: clamp(52px, 6vw, 90px) 5.8% clamp(52px, 6vw, 82px);
+  background: #e4bd7a;
 }
 
 .title {
