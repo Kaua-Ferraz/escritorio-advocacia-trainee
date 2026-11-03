@@ -1,0 +1,132 @@
+:root {
+  --bg: #2b2725;      
+  --bg-menu: #322c29;     
+  --text: #f4efe8;
+  --font: "Cormorant Garamond", Georgia, serif;
+  --yellow: #ffde59;
+  --brown: #7a5c4b;
+  --tan: #e3be84;
+  --gold: #d9b573;
+  --ink: #1a1512;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { background: var(--bg); color: var(--text); font-family: var(--font); }
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+.servicos {
+  position: relative;
+  isolation: isolate;
+  padding: 6.5rem 1.25rem 3rem;
+  background: var(--brown);
+  color: var(--ink);
+}
+
+.servicos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--yellow);
+  clip-path: polygon(0 4rem, 50% 0, 100% 4rem, 100% 100%, 0 100%);
+}
+.servicos h2,
+.card h3 {
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+.servicos h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+
+.cards { display: grid; gap: 1.5rem; max-width: 40rem; margin: 0 auto; }
+.card {
+  padding: 1.25rem 1.5rem 1.5rem;
+  background: var(--tan);
+  border: 1px solid var(--ink);
+  border-radius: 2rem;
+  font-family: "Inter", Arial, sans-serif;
+}
+.card h3 { font-family: var(--font); font-size: 1.25rem; margin-bottom: 0.75rem; }
+.card p { font-size: 0.85rem; line-height: 1.4; }
+
+.contato {
+  padding: 5rem 1.25rem 3rem;
+  background: linear-gradient(var(--yellow), var(--bg-menu) 60%);
+}
+.whats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5;
+  background: linear-gradient(#b59a6a, #9b835a);
+  border: 1px solid #14100d;
+  border-radius: 2.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.whats svg {
+  flex: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.8rem;
+  background: #12c04d;
+  border: 0.3rem dotted #f2f2f2;
+  border-radius: 50%;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 1rem;
+  padding: 2.5rem 1rem;
+  background: var(--bg-menu);
+}
+.footer-brand { display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; }
+.footer-logo {
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #6e5b49;
+  background: #1b1918;
+}
+.footer-logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+.footer address {
+  display: grid;
+  margin-left: auto;
+  font-style: normal;
+  text-align: right;
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+.footer address span { font-weight: 700; }
+
+@media (min-width: 900px) {
+  .servicos { padding: 8rem 2rem 4rem; }
+  .servicos::before { clip-path: polygon(0 6rem, 50% 0, 100% 6rem, 100% 100%, 0 100%); }
+  .servicos h2 { font-size: 2.5rem; margin-bottom: 2rem; }
+  .cards { gap: 2.5rem; }
+  .card { padding: 1.5rem 2rem 2rem; border-radius: 3rem; }
+  .card h3 { font-size: 1.6rem; }
+  .card p { font-size: 1.1rem; }
+
+  .contato { padding: 6rem 2rem 4rem; }
+  .whats { padding: 2rem; gap: 3rem; font-size: 1.4rem; border-radius: 3rem; }
+  .whats svg { width: 5.5rem; height: 5.5rem; }
+
+  .footer { padding: 2.5rem 3rem 2.5rem 0.5rem; }
+  .footer-brand { gap: 1rem; }
+  .footer-brand > a:last-child,
+  .footer address a { text-decoration: underline; text-underline-offset: 3px; }
+  .footer-logo { width: 7.5rem; height: 7.5rem; }
+}
