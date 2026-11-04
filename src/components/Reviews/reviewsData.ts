@@ -45,7 +45,7 @@ export const reviews: Review[] = [
   {
     id: 7,
     name: "Monark",
-    comment: "Faz o Igor devolver minha grana.",
+    comment: "Fez o Igor devolver minha grana.",
     rating: 5,
   },
   {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AboutGallery from "./AboutGallery/AboutGallery";
 
 export default function About() {
   return (
@@ -46,15 +47,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="relative order-2 aspect-[4/3] w-full overflow-hidden rounded-lg shadow-xl">
-            <Image
-              src="/images/escritorio.png"
-              alt="Fachada do escritório Carvalho & Associados"
-              fill
-              sizes="(max-width: 767px) 100vw, 55vw"
-              className="object-cover"
-              priority
-            />
+          <div className="order-2 w-full">
+            <AboutGallery />
           </div>
         </div>
       </div>
