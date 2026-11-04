@@ -22,11 +22,12 @@ export default function Footer() {
         </Link>
 
         <address className={styles.address}>
-          <span>© Carvalho &amp; Associados</span>
+          <span className={styles.copyright}>© Carvalho &amp; Associados</span>
           <a href="mailto:carvalho%26associados@gmail.com">
             carvalho&amp;associados@gmail.com
           </a>
           <a href="tel:+55674002-8922">+55 67 4002-8922</a>
+          <span>3828 Piermont Dr NE, Albuquerque, NM 87111, EUA</span>
         </address>
       </div>
     </footer>
