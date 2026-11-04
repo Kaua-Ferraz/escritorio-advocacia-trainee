@@ -16,9 +16,28 @@
 }
 
 :root {
-  /* Adicione aqui outras variáveis globais do projeto. */
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
 }
 
 body {
-  /* Adicione aqui os estilos globais da página. */
+  min-width: 320px;
+  margin: 0;
+  color: #172033;
+  background: #2b2725;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #d9b573;
+  outline-offset: 3px;
 }

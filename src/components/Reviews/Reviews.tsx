@@ -37,27 +37,29 @@ function ReviewRow({ reviews: rowReviews, row }: ReviewRowProps) {
 
 export default function Reviews() {
   return (
-    <section className={styles.reviews} aria-labelledby="reviews-title">
+    <section id="avaliacoes" className={styles.reviews} aria-labelledby="reviews-title">
       <div className={styles.intro}>
         <h2 id="reviews-title" className={styles.title}>
           A confiança de quem nos escolheu.
         </h2>
       </div>
 
-      <div className={styles.stage}>
-        <p className={styles.description}>
-          Conheça as experiências de clientes que confiaram em nosso trabalho.
-        </p>
+      <div className={styles.stageShell}>
+        <div className={styles.stage}>
+          <p className={styles.description}>
+            Conheça as experiências de clientes que confiaram em nosso trabalho.
+          </p>
 
-        <div
-          className={styles.carrossel}
-          role="region"
-          aria-roledescription="carrossel"
-          aria-label="Avaliações de clientes"
-        >
-          {reviewRows.map((rowReviews, index) => (
-            <ReviewRow reviews={rowReviews} row={index + 1} key={index} />
-          ))}
+          <div
+            className={styles.carrossel}
+            role="region"
+            aria-roledescription="carrossel"
+            aria-label="Avaliações de clientes"
+          >
+            {reviewRows.map((rowReviews, index) => (
+              <ReviewRow reviews={rowReviews} row={index + 1} key={index} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

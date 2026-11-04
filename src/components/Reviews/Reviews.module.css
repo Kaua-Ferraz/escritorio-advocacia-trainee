@@ -3,9 +3,11 @@
   --dark: #302b29;
   --card: #dedede;
   --gold: #ffd536;
+  --cream: #f9f5eb;
+  --sand: #e4bd7a;
   --gap: clamp(26px, 3vw, 44px);
   overflow: hidden;
-  background: #e4bd7a;
+  background: var(--cream);
   color: var(--dark);
   font-family: var(--font-inter), Arial, sans-serif;
 }
@@ -15,7 +17,7 @@
   min-height: clamp(190px, 21vw, 300px);
   align-items: flex-end;
   padding: clamp(52px, 6vw, 90px) 5.8% clamp(52px, 6vw, 82px);
-  background: #e4bd7a;
+  background: var(--cream);
 }
 
 .title {
@@ -30,9 +32,18 @@
   text-shadow: 0 10px 32px rgb(48 43 41 / 18%);
 }
 
+.stageShell {
+  margin-top: clamp(-60px, -4vw, -34px);
+  background: linear-gradient(
+    to bottom,
+    var(--cream) 0 46%,
+    #efe0c4 50%,
+    var(--sand) 54% 100%
+  );
+}
+
 .stage {
   position: relative;
-  margin-top: clamp(-60px, -4vw, -34px);
   padding: clamp(112px, 10vw, 150px) 0 clamp(66px, 6vw, 92px);
   background: var(--brown);
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 94%);
@@ -135,8 +146,11 @@
     line-height: 1.02;
   }
 
-  .stage {
+  .stageShell {
     margin-top: -42px;
+  }
+
+  .stage {
     padding: 102px 0 68px;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 96%);
   }

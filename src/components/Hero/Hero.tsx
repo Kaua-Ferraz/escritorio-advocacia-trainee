@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero} aria-labelledby="hero-title">
+    <section id="inicio" className={styles.hero} aria-labelledby="hero-title">
       <div className={styles.photo} aria-hidden="true" />
       <div className={styles.graphic} aria-hidden="true" />
 

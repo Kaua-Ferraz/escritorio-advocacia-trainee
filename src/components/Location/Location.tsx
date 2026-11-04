@@ -14,6 +14,8 @@ export default function Location() {
         <img src="/images/location-shape-desktop.svg" alt="" />
       </picture>
 
+      <div className={styles.bottomFade} aria-hidden="true" />
+
       <div className={styles.content}>
         <h2 id="location-title" className={styles.title}>
           Venha nos conhecer.

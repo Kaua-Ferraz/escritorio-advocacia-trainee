@@ -27,6 +27,22 @@
   height: auto;
 }
 
+.bottomFade {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 48%;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 31, 30, 0) 0%,
+    rgba(33, 31, 30, 0.48) 42%,
+    #211f1e 100%
+  );
+}
+
 .content {
   width: min(1120px, 88%);
   margin-inline: auto;
@@ -156,6 +172,10 @@
 @media (max-width: 700px) {
   .location {
     min-height: clamp(1420px, 365vw, 1760px);
+  }
+
+  .bottomFade {
+    height: 55%;
   }
 
   .content {

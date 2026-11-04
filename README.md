@@ -36,13 +36,24 @@ src/
     page.tsx
   assets/                 imagens, ícones e logotipos importados
   components/             componentes e seções do site
-    Contact.tsx
-    Footer.tsx
-    Header.tsx
-    Hero.tsx
-    PracticeAreas.tsx
+    Contact/
+      Contact.tsx
+      Contact.module.css
+    Footer/
+      Footer.tsx
+      Footer.module.css
+    Header/
+      Header.tsx
+      Header.module.css
+    Hero/
+      Hero.tsx
+      Hero.module.css
+    PracticeAreas/
+      PracticeAreas.tsx
+      PracticeAreas.module.css
 ```
 
-Os componentes ficam diretamente em `src/components`. Os recursos visuais ficam
-em `src/assets`, enquanto `src/app` concentra as páginas e a configuração global
+Cada seção com estilos próprios fica em uma pasta dentro de `src/components`,
+junto do respectivo CSS Module. Os recursos visuais ficam em `src/assets` ou
+`public/images`, enquanto `src/app` concentra as páginas e a configuração global
 da aplicação.
